@@ -20,7 +20,7 @@ call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 "*****************************************************************************
-"" Plug install packages
+"" minpac install packages
 "*****************************************************************************
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-fugitive')
@@ -52,7 +52,7 @@ call minpac#add('SirVer/ultisnips')
 call minpac#add('honza/vim-snippets')
 
 "" Color
-Plug 'articicestudio/nord-vim'
+call minpac#add('articicestudio/nord-vim')
 
 "*****************************************************************************
 "" Custom bundles
@@ -131,8 +131,6 @@ call minpac#add('HerringtonDarkholme/yats.vim')
 if filereadable(expand("~/.config/nvim/local_bundles.vim"))
   source ~/.config/nvim/local_bundles.vim
 endif
-
-call plug#end()
 
 " Required:
 filetype plugin indent on

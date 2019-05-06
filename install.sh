@@ -28,6 +28,11 @@ function symlink() {
   ln -sf "$src" "$dest"
 }
 
+if [ ! -d $HOME/.oh-my-zsh ]; then
+    echo "Setting up oh-my-zsh..."
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
+
 if ! which git >/dev/null ; then
   echo "Error: git is not installed"
   exit 1
@@ -56,11 +61,6 @@ for path in .* ; do
       ;;
   esac
 done
-
-if [ ! -d $HOME/.oh-my-zsh ]; then
-    echo "Setting up oh-my-zsh..."
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
 
 if which tmux >/dev/null 2>&1 ; then
   echo "Setting up tmux..."

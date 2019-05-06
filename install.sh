@@ -57,12 +57,6 @@ for path in .* ; do
   esac
 done
 
-echo "Setting up git..."
-cp "$basedir/.gitconfig.base" "$HOME/.gitconfig"
-if which git-lfs >/dev/null 2>&1 ; then
-  git lfs install
-fi
-
 if which tmux >/dev/null 2>&1 ; then
   echo "Setting up tmux..."
   tpm="$HOME/.tmux/plugins/tpm"

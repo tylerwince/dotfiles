@@ -51,9 +51,6 @@ call minpac#add('Shougo/vimproc.vim', {'do': g:make})
 call minpac#add('SirVer/ultisnips')
 call minpac#add('honza/vim-snippets')
 
-"" Color
-call minpac#add('articicestudio/nord-vim')
-
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************

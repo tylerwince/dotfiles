@@ -51,6 +51,9 @@ call minpac#add('Shougo/vimproc.vim', {'do': g:make})
 call minpac#add('SirVer/ultisnips')
 call minpac#add('honza/vim-snippets')
 
+"" Colors
+call minpac#add('altercation/vim-colors-solarized')
+
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
@@ -185,7 +188,8 @@ set number
 set relativenumber
 
 let no_buffers_menu=1
-silent! colorscheme nord
+let g:solarized_termtrans=1
+colorscheme solarized
 
 set mousemodel=popup
 set t_Co=256

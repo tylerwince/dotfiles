@@ -367,6 +367,7 @@ endif
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>e :FZF -m<CR>
+nnoremap <silent> <C-p> :Ag<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 

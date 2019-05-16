@@ -3,3 +3,5 @@ Pipfile*
 .mypy_cache
 .config/nvim/pack
 .config/gcloud
+.config/karabiner
+.config/configstore

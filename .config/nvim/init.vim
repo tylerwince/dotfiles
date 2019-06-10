@@ -34,6 +34,7 @@ call minpac#add('Yggdroot/indentLine')
 call minpac#add('sheerun/vim-polyglot')
 call minpac#add('tpope/vim-rhubarb') " required by fugitive to :Gbrowse
 call minpac#add('christoomey/vim-tmux-navigator')
+call minpac#add('jreybert/vimagit')
 
 if isdirectory('/usr/local/opt/fzf')
   call minpac#add('/usr/local/opt/fzf') | call minpac#add('junegunn/fzf.vim')
